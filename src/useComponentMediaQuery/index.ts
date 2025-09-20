@@ -1,1 +1,1 @@
-export { useComponentMediaQuery } from './hooks';
+export { useComponentMediaQuery, useMediaContainerNewObserver } from './hooks';

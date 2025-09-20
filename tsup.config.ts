@@ -2,7 +2,11 @@ import { defineConfig } from 'tsup';
 
 export default defineConfig((options) => ({
   ...options,
-  entry: ['src/index.ts'],
+  entry: [
+    'src/index.ts',
+    "!storybook/**/*",
+  ],
+  
   dts: {
     // Fixes the module resolution error
     resolve: true,

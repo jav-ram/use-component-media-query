@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -13,7 +12,11 @@
     "incremental": false,
     "isolatedModules": true,
     "jsx": "react-jsx",
+    "paths": {
+      "@exeboard/*": ["../*"],
+      "@/*": ["./src/*"]
+    }
   },
-  "include": ["./src/**/*", "eslint.mjs"],
+  "include": ["src"],
   "exclude": ["node_modules"]
 }

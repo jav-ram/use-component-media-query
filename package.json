@@ -1,8 +1,13 @@
 {
   "name": "use-component-media-query",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "tsup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -10,6 +15,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tsup": "^8.5.0"
